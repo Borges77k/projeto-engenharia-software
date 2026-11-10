@@ -124,52 +124,43 @@ useEffect(() => {
     setHorarioLembrete('')
 
   }
-// Adiciona um contato
-function adicionarContato(event) {
-  event.preventDefault()
+  // Adiciona um contato
+  function adicionarContato(event) {
+    event.preventDefault()
 
-  if (!nomeContato.trim() || !telefoneContato.trim()) {
-    alert('Preencha todos os campos!')
-    return
+    if (!nomeContato.trim() || !telefoneContato.trim()) {
+      alert('Preencha todos os campos!')
+      return
+    }
+
+    const novoContato = {
+      id: Date.now(),
+      nome: nomeContato.trim(),
+      telefone: telefoneContato.trim()
+    }
+
+    setContatos((listaAtual) => [
+      ...listaAtual,
+      novoContato
+    ])
+
+    setNomeContato('')
+    setTelefoneContato('')
   }
 
-  const novoContato = {
-    id: Date.now(),
-    nome: nomeContato.trim(),
-    telefone: telefoneContato.trim()
-  }
-// Exclui um contato
-function excluirContato(id) {
-  const confirmar = window.confirm(
-    'Deseja realmente excluir este contato?'
-  )
-
-  if (confirmar) {
-    setContatos((listaAtual) =>
-      listaAtual.filter((item) => item.id !== id)
+  // Exclui um contato
+  function excluirContato(id) {
+    const confirmar = window.confirm(
+      'Deseja realmente excluir este contato?'
     )
-  }
-}
-  setContatos((listaAtual) => [
-    ...listaAtual,
-    novoContato
-  ])
 
-  setNomeContato('')
-  setTelefoneContato('')
-}
-// Exclui um contato
-function excluirContato(id) {
-  const confirmar = window.confirm(
-    'Deseja realmente excluir este contato?'
-  )
-
-  if (confirmar) {
-    setContatos((listaAtual) =>
-      listaAtual.filter((item) => item.id !== id)
-    )
+    if (confirmar) {
+      setContatos((listaAtual) =>
+        listaAtual.filter((item) => item.id !== id)
+      )
+    }
   }
-}
+
   // Exclui um lembrete
   function excluirLembrete(id) {
     const confirmar = window.confirm(
