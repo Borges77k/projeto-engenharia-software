@@ -1,0 +1,343 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f5;
+  color: #263b32;
+}
+
+.pagina {
+  min-height: 100vh;
+  padding: 35px 7%;
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.logo {
+  font-size: 38px;
+  font-weight: bold;
+  color: #245c46;
+}
+
+.logo span {
+  color: #e39b48;
+}
+
+.cabecalho p {
+  font-size: 18px;
+  color: #596b61;
+}
+
+.boas-vindas {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.boas-vindas h1 {
+  font-size: 36px;
+  color: #245c46;
+}
+
+.boas-vindas p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.acessos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 30px 20px;
+  min-height: 190px;
+  border: 2px solid #dce8df;
+  border-radius: 18px;
+  background: white;
+  color: #245c46;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 10px #0000000a;
+}
+
+.cartao:hover {
+  border-color: #4d8968;
+  background: #f0f7f1;
+}
+
+.cartao:focus-visible {
+  outline: 4px solid #e39b48;
+  outline-offset: 4px;
+}
+
+.icone {
+  font-size: 42px;
+}
+
+.cartao small {
+  font-size: 16px;
+  font-weight: normal;
+  color: #596b61;
+  text-align: center;
+}
+
+footer {
+  margin-top: 55px;
+  text-align: center;
+  color: #596b61;
+  font-size: 16px;
+}
+
+@media (max-width: 650px) {
+  .acessos {
+    grid-template-columns: 1fr;
+  }
+
+  .boas-vindas h1 {
+    font-size: 28px;
+  }
+
+  .boas-vindas p {
+    font-size: 19px;
+  }
+
+  .pagina {
+    padding: 25px 5%;
+  }
+}
+
+/* Tela da agenda */
+
+.agenda {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #dce8df;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px #0000000a;
+}
+
+.agenda h1 {
+  color: #245c46;
+  font-size: 34px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.agenda > p {
+  font-size: 19px;
+  text-align: center;
+  color: #596b61;
+}
+
+.voltar {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #245c46;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.agenda form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.agenda label {
+  font-size: 19px;
+  font-weight: bold;
+  color: #263b32;
+}
+
+.agenda input {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px;
+  border: 2px solid #b9cec0;
+  border-radius: 10px;
+  font-size: 18px;
+  background: white;
+  color: #263b32;
+}
+
+.agenda input:focus {
+  outline: 3px solid #e39b48;
+  border-color: #245c46;
+}
+
+.adicionar {
+  min-height: 55px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #245c46;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.adicionar:hover,
+.voltar:hover {
+  background: #17432f;
+}
+
+.agenda h2 {
+  color: #245c46;
+  font-size: 25px;
+  margin-top: 35px;
+}
+
+.lista-compromissos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.compromisso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  background: #f4f7f5;
+  border: 1px solid #dce8df;
+  border-radius: 12px;
+}
+
+.compromisso h3 {
+  font-size: 20px;
+  color: #245c46;
+}
+
+.compromisso p {
+  font-size: 17px;
+}
+
+.excluir {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #a83232;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .agenda {
+    padding: 18px;
+  }
+
+  .compromisso {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Link para ligar para um contato */
+.compromisso a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  background-color: #e5f2eb;
+  color: #205c46;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.compromisso a:hover {
+  background-color: #cfe6d9;
+}
+
+/* Botão de ligação dos contatos */
+.compromisso a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 12px 22px;
+  background-color: #205c46;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.compromisso a:hover {
+  background-color: #17432f;
+}
+
+/* Destaque dos campos ao selecionar */
+/* Destaque dos campos ao selecionar */
+.agenda input:focus {
+  outline: 3px solid #205c46;
+  outline-offset: 3px;
+  border-color: #205c46;
+}
+
+/* Destaque ao navegar pelo teclado */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #e69b28;
+  outline-offset: 4px;
+}.agenda input:focus {
+  outline: 3px solid #205c46;
+  outline-offset: 3px;
+  border-color: #205c46;
+}
+
+/* Destaque ao navegar pelo teclado */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #e69b28;
+  outline-offset: 4px;
+}
+
+
+.compromisso a:hover {
+  background-color: #174532;
+}/* Destaque dos campos ao selecionar */
+.agenda input:focus {
+  outline: 3px solid #205c46;
+  outline-offset: 3px;
+  border-color: #205c46;
+}
+
+/* Destaque dos botões ao navegar pelo teclado */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #e69b28;
+  outline-offset: 4px;
+}.agenda h1 {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.agenda > p {
+  font-size: 18px;
+}
