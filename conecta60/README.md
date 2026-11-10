@@ -1,16 +1,79 @@
-# React + Vite
+# Conecta60+
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Tecnologia mais simples, vida mais conectada.**
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O Conecta60+ é uma plataforma web desenvolvida com o objetivo de facilitar o acesso à tecnologia para pessoas com 60 anos ou mais, promovendo autonomia, praticidade e inclusão digital.
 
-## React Compiler
+A proposta é oferecer uma interface simples, intuitiva e acessível, permitindo que os usuários organizem atividades do cotidiano e mantenham informações importantes em um só lugar.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Objetivo
 
-## Expanding the Oxlint configuration
+Desenvolver uma aplicação que contribua para a inclusão digital da população idosa, oferecendo ferramentas que facilitem a organização pessoal e a comunicação.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Funcionalidades
+
+O projeto conta com três funcionalidades principais:
+
+- **Agenda:** permite cadastrar, visualizar e excluir compromissos.
+- **Lembretes:** permite cadastrar, visualizar e excluir lembretes importantes.
+- **Contatos importantes:** permite cadastrar, visualizar e excluir contatos, além de iniciar uma ligação pelo dispositivo.
+
+## Tecnologias utilizadas
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+- LocalStorage para armazenamento de dados no navegador.
+- Git e GitHub para controle de versão e gerenciamento do código.
+
+## Acessibilidade
+
+A aplicação busca proporcionar uma experiência simples e acessível, utilizando:
+
+- Textos com tamanho confortável para leitura.
+- Botões grandes e de fácil identificação.
+- Contraste entre texto e plano de fundo.
+- Navegação intuitiva.
+- Interface adaptável a dispositivos móveis.
+
+## Como executar o projeto
+
+É necessário ter o Node.js e o npm instalados.
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Borges77k/projeto-engenharia-software.git
+```
+
+2. Entre na pasta do projeto:
+
+```bash
+cd projeto-engenharia-software/conecta60
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Inicie a aplicação:
+
+```bash
+npm run dev
+```
+
+5. Acesse o endereço disponibilizado pelo Vite no navegador.
+
+## Contexto acadêmico
+
+Projeto desenvolvido para a disciplina de Engenharia de Software, com foco em impacto social, inclusão digital e desenvolvimento de uma solução tecnológica acessível.
+
+## Desenvolvedores
+
+Projeto acadêmico desenvolvido pela equipe responsável pelo Conecta60+.
