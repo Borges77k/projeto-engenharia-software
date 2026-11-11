@@ -1,0 +1,23 @@
+
+# Casos de uso — Conecta60+
+
+O sistema permite que pessoas com 60 anos ou mais organizem seus compromissos, lembretes e contatos importantes.
+
+## Diagrama de casos de uso
+
+```mermaid
+flowchart TD
+    U["Pessoa usuária (60+)"]
+
+    subgraph CONECTA["Conecta60+"]
+        A["Organizar compromissos"]
+        L["Criar e consultar lembretes"]
+        C["Cadastrar e consultar contatos"]
+        E["Excluir compromissos, lembretes e contatos"]
+    end
+
+    U --> A
+    U --> L
+    U --> C
+    U --> E
+```

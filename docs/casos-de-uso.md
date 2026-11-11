@@ -21,3 +21,23 @@
 
 ## Descrição
 O diagrama representa as principais interações da pessoa usuária com o Conecta60+, permitindo organizar compromissos, criar lembretes e manter contatos importantes em uma interface simples e acessível.
+
+
+## Diagrama
+
+```mermaid
+flowchart TD
+    U["Pessoa usuária (60+)"]
+
+    subgraph CONECTA["Conecta60+"]
+        A["Organizar compromissos"]
+        L["Criar e consultar lembretes"]
+        C["Cadastrar e consultar contatos"]
+        E["Excluir compromissos, lembretes e contatos"]
+    end
+
+    U --> A
+    U --> L
+    U --> C
+    U --> E
+```
