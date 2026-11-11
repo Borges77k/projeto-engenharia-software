@@ -1,0 +1,21 @@
+flowchart TD
+    U["Pessoa usuária (60+)"]
+    B["Navegador"]
+
+    subgraph APP["Aplicação Conecta60+"]
+        R["React"]
+        C["Componentes e funcionalidades"]
+        S["Estado e funções do App.jsx"]
+        CSS["CSS: aparência e acessibilidade"]
+    end
+
+    LS[("localStorage do navegador")]
+
+    U --> B
+    B --> R
+    R --> C
+    C --> S
+    R --> CSS
+    S <--> LS
+
+    LS --- D["Compromissos, lembretes e contatos"]
